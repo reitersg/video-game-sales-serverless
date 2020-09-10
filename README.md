@@ -8,6 +8,7 @@ After that, I kick off another lambda based on the json file being created in S3
 (PS4, Wii, etc.)
 
 The two endpoints are as followed:
+
 /games_sales = retrieving all games
 /games_sales/:platform = retrieving game sales based on game platform
 
