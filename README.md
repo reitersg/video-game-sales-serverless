@@ -7,6 +7,10 @@ I use S3 Sync to upload the video game sales csv file to S3 to start off. Also, 
 After that, I kick off another lambda based on the json file being created in S3 that writes to DynamoDB all the video game sales. After that, I created two endpoints in API Gateway to retrieve all games and retrieve games based on their platform
 (PS4, Wii, etc.)
 
+The two endpoints are as followed:
+/games_sales = retrieving all games
+/games_sales/:platform = retrieving game sales based on game platform
+
 # Deployment:
 
   - Install serverless locally and set up credentials from AWS for Serverless
